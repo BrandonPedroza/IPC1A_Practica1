@@ -411,7 +411,20 @@ public class practica1 {
 							System.out.println();		
 			}
 		}	
-		
+			
+			
+			public static void cadena(){
+				 String oracion;
+			     Scanner s=new Scanner(System.in);
+			     System.out.println("Ingrese una palabra");
+			     oracion=s.nextLine();
+			  
+			     	String[] asteriscos = oracion.split("");
+			     	for(int i = 0; i < asteriscos.length; i++) 
+			     		System.out.print("*");
+			     	System.out.println(" ");
+			     	System.out.println(oracion);
+			     	}
 		
 		public static void cuadrado (){
 			int a=0;
@@ -448,7 +461,7 @@ public class practica1 {
 				case 9: romanos();break;
 				case 10: piramide();break;
 				case 11: hora();break;
-				case 12: hora();break;
+				case 12: cadena();break;
 				case 13: hora();break;
 				case 14: cuadrado();break;
 				case 15: hora();break;
